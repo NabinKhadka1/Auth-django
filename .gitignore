@@ -1,0 +1,46 @@
+### Python template
+# Byte-compiled / optimized / DLL files
+auth_django/settings/__pycache__/
+enroll/__pycache__
+enroll/migrations
+auth_django/__pycache__
+*.py[cod]
+*$py.class
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+# Translations
+*.mo
+*.pot
+# Django stuff:
+*.log
+db.sqlite3
+# Sphinx documentation
+docs/_build/
+# IPython
+profile_default/
+ipython_config.py
+# Environments
+venv/
+env/
+auth_django/settings/env.py
+settings/env
+# Media and Static directories
+/media/
+!/media/.gitkeep
+/static/
+!/static/.gitkeep
+# Secrets
+secrets.json
