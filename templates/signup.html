@@ -18,13 +18,14 @@
         {% endfor %}
     {% endif %}
 
-    <form action="" method="POST">
+    <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
         {% for fm in form %}
             {{fm.label}} {{fm}} {{fm.errors|striptags}} <br><br>
         {% endfor %}
         <input type="Submit" value='Submit'>
     </form>
+    <a href="{% url 'login' %}">Login</a>
     
     
 </body>
