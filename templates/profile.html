@@ -21,6 +21,13 @@
         {% endfor %}
     {% endif %}
 
+    {% if users != None %}
+    <h1>User Information</h1>
+        {% for user in users %}
+            <a href="{% url 'userdetail' user.id %}">{{user}}</a> <br> <br>
+        {% endfor %}
+    {% endif %}
+
     <form action="" method="POST">
         {% csrf_token %}
         {% for fm in form %}
@@ -30,6 +37,7 @@
     </form>
 
     <br> <br>
-    <a href="{% url 'logout' %}">Logout</a>
+    <a href="{% url 'logout' %}">Logout</a> <br><br>
+    <a href="{% url 'passchange' %}">Change Password</a>
 </body>
 </html>
