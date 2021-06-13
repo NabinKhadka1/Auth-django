@@ -18,7 +18,7 @@
         {% endfor %}
     {% endif %}
 
-    <form action="{% url 'login' %}" method="POST">
+    <form action="" method="POST">
         {% csrf_token %}
         {% for fm in form %}
             {{fm.label}} {{fm}} {{fm.errors|striptags}} <br><br>
